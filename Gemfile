@@ -44,6 +44,7 @@ group :development, :test do
   gem "brakeman", "~> 3.5"
   # Scan Gemfile.lock for gems with vulnerabilities
   gem "bundler-audit"
+  gem "annotate"
 end
 
 group :development do

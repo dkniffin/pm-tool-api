@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: pm-tool-api_development
+
+test:
+  <<: *default
+  database: pm-tool-api_test
+
+production:
+  <<: *default
+  database: pm-tool-api_production
+  username: pm-tool-api
+  password: <%= ENV['pm-tool-api_DATABASE_PASSWORD'] %>

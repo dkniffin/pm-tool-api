@@ -32,3 +32,5 @@ config/database.yml
 */.DS_Store
 vendor/ruby
 .tape
+
+NOTES.md
